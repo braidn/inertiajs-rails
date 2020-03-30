@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An exploration between Rails + [Inertia JS][ijs] and [Svelte][sv].
 
-Things you may want to cover:
+Likely also some exploration around [System Tests][syt] to tie all these pieces together.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[sv]: https://svelte.dev/
+[ijs]: https://inertiajs.com/
+[syt]: https://guides.rubyonrails.org/testing.html#system-testing
