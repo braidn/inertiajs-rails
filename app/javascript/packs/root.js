@@ -6,15 +6,14 @@
 // All it does is render <div>Hello Svelte!</div> at the bottom of the page.
 
 import App from '../app.svelte'
+import { InertiaApp } from '@inertiajs/inertia-svelte'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const app = new App({
-    target: document.body,
-    props: {
-      name: 'Svelte'
-    }
-  });
+const app = document.getElementById('app')
 
-  window.app = app;
+new InertiaApp({
+  target: app,
+  props: {
+    initialPage: JSON.parse(app.dataset.page),
+    resolveComponent: name => require(`./Pages/${name}.svelte`).default,
+  },
 })
-
