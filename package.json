@@ -2,6 +2,8 @@
   "name": "inertia_rails",
   "private": true,
   "dependencies": {
+    "@inertiajs/inertia": "^0.1.7",
+    "@inertiajs/inertia-svelte": "^0.1.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
