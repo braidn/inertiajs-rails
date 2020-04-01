@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    render inertia: 'Products/Index', props: {
+      products: Product.all.as_json
+    }
   end
 end
