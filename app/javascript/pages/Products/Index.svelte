@@ -1,4 +1,5 @@
 <script>
+  import Layout from '../Layout.svelte'
   export let name = 'from svelte';
 </script>
 
@@ -8,4 +9,6 @@
   }
 </style>
 
-<h1>Hello {name}!</h1>
+<Layout>
+  <h1>Hello {name}!</h1>
+</Layout>

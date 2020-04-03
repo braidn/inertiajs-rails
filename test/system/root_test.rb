@@ -5,9 +5,9 @@ class RootTest < ApplicationSystemTestCase
     it 'boots the svelte main app' do
       visit root_url
 
-      svelte_app = has_content? 'Hello from svelte!'
+      svelte_layout = find('header').visible?
 
-      _(svelte_app).must_equal true
+      _(svelte_layout).must_equal true
     end
   end
 end
