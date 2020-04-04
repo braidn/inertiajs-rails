@@ -10,8 +10,10 @@ class ProductsController < ApplicationController
   end
 
   def show
+    product = Product.find(params[:id])
     render inertia: 'Products/Show', props: {
-      product: Product.find(params[:id])
-    }
+      product: product.as_json(
+        only: %i[name description]
+      )}
   end
 end
