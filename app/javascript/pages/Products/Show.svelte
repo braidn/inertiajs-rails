@@ -1,6 +1,6 @@
 <script>
   import Layout from "../Layout.svelte";
-  export let product = {...$$props.product}
+  export let product = {...props.product}
 </script>
 
 <Layout>

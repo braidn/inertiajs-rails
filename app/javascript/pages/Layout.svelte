@@ -10,6 +10,6 @@
   </header>
 
   <div class="productsContainer">
-    <slot />
+    <slot props={props} />
   </div>
 </main>
